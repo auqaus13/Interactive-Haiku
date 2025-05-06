@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>King of Thorns – Off the Grid</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: url("https://live.staticflickr.com/4049/4682459222_a7cd5d7675_k.jpg") no-repeat center/cover;
+      font-family: 'Georgia', serif;
+      color: #d42c08;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .poem {
+      position: relative;
+      width: 80%;
+      height: 60%;
+    }
+
+    .poem div {
+      position: absolute;
+      font-size: 2rem;
+      animation: scatter 8s infinite alternate ease-in-out;
+    }
+
+    .poem div:nth-child(1) {
+      top: 15%;
+      left: 20%;
+      animation-delay: 0s;
+    }
+
+    .poem div:nth-child(2) {
+      top: 40%;
+      left: 60%;
+      animation-delay: 1s;
+    }
+
+    .poem div:nth-child(3) {
+      top: 70%;
+      left: 35%;
+      animation-delay: 2s;
+    }
+
+    @keyframes scatter {
+      0% { transform: translate(0, 0) rotate(0deg); }
+      100% { transform: translate(-40px, 30px) rotate(10deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="poem">
+    <div>Crowned in silent pain</div>
+    <div>Fate’s thread pulls through blood and dusk</div>
+    <div>Thorns bloom where I tread</div>
+  </div>
+</body>
+</html>
